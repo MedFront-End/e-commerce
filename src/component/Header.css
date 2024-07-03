@@ -1,0 +1,68 @@
+/* Header.css */
+.header-container {
+    width: 100%;
+    overflow: hidden; /* Ensures no scroll bars appear */
+  }
+  
+  .slick-list {
+    overflow: hidden; /* Avoid scroll bar issues */
+  }
+  
+  .slick-slide {
+    transition: transform 1s ease !important; /* Smooth left-to-right transition */
+  }
+  
+  .slider-item {
+    display: flex !important; /* Ensures flex display */
+    justify-content: center; /* Center content */
+    align-items: center;
+    flex-direction: column; /* Stack items vertically for smaller screens */
+    padding: 20px; /* Adds padding to avoid overflow issues */
+  }
+  
+  .content-wrapper {
+    display: flex;
+    flex-direction: column; /* Stack items vertically for smaller screens */
+    align-items: center; /* Center items horizontally */
+    width: 100%; /* Ensure full width */
+  }
+  
+  .text-content {
+    flex: 1;
+    padding: 10px;
+    text-align: center; /* Center text for smaller screens */
+  }
+  
+  .image-content {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .slider-image {
+    max-width: 100%; /* Ensure images are responsive */
+    height: auto;
+  }
+  
+  .title {
+    font-size: 2rem; /* Adjust font size for responsiveness */
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    margin-bottom: 1.25rem;
+  }
+  
+  @media (min-width: 768px) {
+    .content-wrapper {
+      flex-direction: row; /* Align items in a row for medium and larger screens */
+      text-align: left; /* Left-align text for larger screens */
+    }
+  
+    .title {
+      font-size: 3rem; /* Adjusted font size for better readability */
+    }
+  }
+  
